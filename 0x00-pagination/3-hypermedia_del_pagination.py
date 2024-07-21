@@ -44,8 +44,8 @@ class Server:
 
         i = index
         while (len(data) < page_size and i < len(self.dataset())):
-            if i in indx_data :
-                data[i] = indx_data [i]
+            if i in indx_data:
+                data[i] = indx_data[i]
             i += 1
 
         page = list(data.values())
