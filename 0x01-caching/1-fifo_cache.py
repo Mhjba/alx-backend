@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """First in First out cache """
-
-
 from base_caching import BaseCaching
+
 
 class FIFOCache(BaseCaching):
     """FIFOCache defines a FIFO caching system"""
