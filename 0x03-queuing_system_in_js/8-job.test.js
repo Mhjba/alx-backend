@@ -1,12 +1,10 @@
-#!/usr/bin/node
-/**
- * Tests for job creation
- */
 import { createQueue } from 'kue';
 import chai from 'chai';
 import sinon from 'sinon';
 import createPushNotificationsJobs from './8-job';
-
+/**
+ * Tests for job creation
+ */
 const expect = chai.expect;
 
 const queue = createQueue();

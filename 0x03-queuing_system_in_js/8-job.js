@@ -1,10 +1,7 @@
-#!/usr/bin/yarn dev
 import { Queue, Job } from 'kue';
 
 /**
- * Creates push notification jobs from the array of jobs info.
- * @param {Job[]} jobs
- * @param {Queue} queue
+ * Creates push notification jobs from the array.
  */
 export const createPushNotificationsJobs = (jobs, queue) => {
   if (!(jobs instanceof Array)) {

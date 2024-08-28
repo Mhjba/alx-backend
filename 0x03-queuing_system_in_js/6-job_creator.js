@@ -1,6 +1,7 @@
-#!/usr/bin/yarn dev
 import { createQueue } from 'kue';
-
+/**
+ * redis client
+ */
 const queue = createQueue({name: 'push_notification_code'});
 
 const job = queue.create('push_notification_code', {

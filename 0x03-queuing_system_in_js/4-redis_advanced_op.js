@@ -1,6 +1,7 @@
-#!/usr/bin/yarn dev
 import { createClient, print } from 'redis';
-
+/**
+ * redis client
+ */
 const client = createClient();
 
 client.on('error', (err) => {

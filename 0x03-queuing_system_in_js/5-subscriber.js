@@ -1,6 +1,7 @@
-#!/usr/bin/yarn dev
 import { createClient } from 'redis';
-
+/**
+ * redis client
+ */
 const client = createClient();
 const EXIT_MSG = 'KILL_SERVER';
 

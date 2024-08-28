@@ -1,6 +1,7 @@
-#!/usr/bin/yarn dev
 import { createQueue } from 'kue';
-
+/**
+ * redis client
+ */
 const jobs = [
   {
     phoneNumber: '4153518780',

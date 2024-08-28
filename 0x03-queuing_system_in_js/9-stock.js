@@ -1,11 +1,9 @@
-#!/usr/bin/node
-/**
- * Stock check
- */
 import { promisify } from 'util';
 import { createClient } from 'redis';
 import express from 'express';
-
+/**
+ * Stock check
+ */
 const redisClient = createClient();
 
 redisClient.on('err', (err) => {
