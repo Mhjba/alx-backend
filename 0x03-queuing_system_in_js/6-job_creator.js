@@ -5,8 +5,8 @@ import { createQueue } from 'kue';
 const queue = createQueue({name: 'push_notification_code'});
 
 const job = queue.create('push_notification_code', {
-  phoneNumber: '07045679939',
-  message: 'Account registered',
+  phoneNumber: '0706052255',
+  message: 'Notification job created',
 });
 
 job
